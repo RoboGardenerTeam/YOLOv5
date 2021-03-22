@@ -9,9 +9,14 @@ YOLOv5 Object Detection in Noisy Images
   * install requirements
     * %cd /content/yolov5/
     * !pip install -r requirements.txt
-  * split dataset to train and validation (only if dataset isn't splitted into two)
+  * split dataset into train and validation (only if dataset isn't splitted into two)
     * %cd /
     * from glob import glob
     * img_list = glob('/content/dataset/(location of images)/*.jpg')
     * from sklearn.model_selecion import train_test_split
     * train, val = train_test_split(img_list, test_size=0.2, random_state=2000)
+  * save locations of train and val
+    * with open('/content/dataset/train.txt', 'w') as f:
+      * f.write('\n'.join(train) + 'n')
+    * with open('/content/dataset/val.txt', 'w') as f:
+      * f.write('\n'.join(val) + 'n')
