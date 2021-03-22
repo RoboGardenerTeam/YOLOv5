@@ -1,7 +1,7 @@
 # yolov5-noise
 YOLOv5 Object Detection in Noisy Images
 * Brief instruction using Google Colaborator
-  * original link: https://www.youtube.com/watch?v=T0DO1C8uYP8
+  * original video link: https://www.youtube.com/watch?v=T0DO1C8uYP8
   * can use free provided GPU (Runtime - Change runtime type - GPU)
   * make a new folder and name it as dataset and upload dataset
   * change directory to content by typing %cd /content/
@@ -20,3 +20,7 @@ YOLOv5 Object Detection in Noisy Images
       * f.write('\n'.join(train) + 'n')
     * with open('/content/dataset/val.txt', 'w') as f:
       * f.write('\n'.join(val) + 'n')
+  * change data.yaml to indicate above train and val locations
+    *  import yaml
+    *  with open('content/dataset/data.yaml', 'r') as f:
+      * data = yaml.load(f)   
