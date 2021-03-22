@@ -24,7 +24,10 @@ YOLOv5 Object Detection in Noisy Images
     *  import yaml
     *  with open('/content/dataset/data.yaml', 'r') as f:
        * data = yaml.load(f)
-    * data['train'] = '/content/dataset/train.txt'
-    * data['val'] = '/content/dataset/val.txt'
+    * data['train'] = '/content/dataset/train.txt' (or a train directory)
+    * data['val'] = '/content/dataset/val.txt' (or a val directory)
     * with open('/content/dataset/data.yaml', 'w') as f:
       * yaml.dump(data, f)
+  * training
+    * %cd /content/yolov5/
+    * !python train.py --img 416 --batch 16 --epochs 50 --data /content/dataset/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name fruit_yolov5s_results
