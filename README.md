@@ -22,5 +22,9 @@ YOLOv5 Object Detection in Noisy Images
       * f.write('\n'.join(val) + 'n')
   * change data.yaml to indicate above train and val locations
     *  import yaml
-    *  with open('content/dataset/data.yaml', 'r') as f:
-       * data = yaml.load(f)   
+    *  with open('/content/dataset/data.yaml', 'r') as f:
+       * data = yaml.load(f)
+    * data['train'] = '/content/dataset/train.txt'
+    * data['val'] = '/content/dataset/val.txt'
+    * with open('/content/dataset/data.yaml', 'w') as f:
+      * yaml.dump(data, f)
