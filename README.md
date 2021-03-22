@@ -17,6 +17,6 @@ YOLOv5 Object Detection in Noisy Images
     * train, val = train_test_split(img_list, test_size=0.2, random_state=2000)
   * save locations of train and val
     * with open('/content/dataset/train.txt', 'w') as f:
-        f.write('\n'.join(train) + 'n')
+      * f.write('\n'.join(train) + 'n')
     * with open('/content/dataset/val.txt', 'w') as f:
-        f.write('\n'.join(val) + 'n')
+      * f.write('\n'.join(val) + 'n')
