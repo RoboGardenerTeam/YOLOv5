@@ -1,7 +1,8 @@
 # yolov5-noise
 YOLOv5 Object Detection in Noisy Images
 * original video link: https://www.youtube.com/watch?v=T0DO1C8uYP8 (in Korean)
-* Brief instruction using Google Colaborator
+* you can download weights and jump to detect section to use them after you install requirements
+* brief instruction using Google Colaborator
   * so we can use free provided GPU (Runtime - Change runtime type - GPU) 
 * make a new folder and name it as dataset and upload dataset
 * change directory to content by typing %cd /content/
