@@ -31,7 +31,7 @@ YOLOv5 Object Detection in Noisy Images
   * modify nc as 1 since we only want to detect pincones
 * training
   * %cd /content/yolov5/
-  * !python train.py --img 416 --batch 16 --epochs 50 --data /content/dataset/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name pinecones_yolov5s_results
+  * !python train.py --img 640 --batch 16 --epochs 50 --data /content/dataset/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name pinecones_yolov5s_results
 * detecting
   * %cd /content/yolov5/
   * !python detect.py --weights /content/yolov5/runs/train/pinecones_yolov5s_results/weights/best.pt --img 640 --conf 0.5 --source (location of videos or photos)
