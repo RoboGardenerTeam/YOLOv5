@@ -1,0 +1,5 @@
+names:
+- Pc
+nc: 1
+train: /content/dataset/train/images
+val: /content/dataset/valid/images
