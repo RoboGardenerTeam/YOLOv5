@@ -1,5 +1,5 @@
 # yolov5-noise
-YOLOv5 Object Detection in Noisy Images
+YOLOv5 Object Detection for Noisy Images
 * original video link: https://www.youtube.com/watch?v=T0DO1C8uYP8 (in Korean)
 * you can download weights and jump to the detect section to use them after you install requirements
 * brief instruction using Google Colaborator
