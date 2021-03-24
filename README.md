@@ -1,7 +1,6 @@
 # yolov5-noise
-YOLOv5 Object Detection for Noisy Images
+YOLOv5 Object Detection for Pine Cone Images
 * original video link: https://www.youtube.com/watch?v=T0DO1C8uYP8 (in Korean)
-* you can download weights and jump to the detect section to use them after you install requirements
 * brief instruction using Google Colaborator
   * so we can use free provided GPU (Runtime - Change runtime type - GPU) 
 * change directory to content
@@ -11,6 +10,7 @@ YOLOv5 Object Detection for Noisy Images
 * install requirements
   * %cd /content/yolov5/
   * !pip install -r requirements.txt
+* you can download weights 'best.pt' and ' ', and jump to the detect section to use them from here
 * make a new folder and name it as 'dataset' and upload your dataset
 * split dataset into train and validation (only if dataset isn't splitted into two)
   * %cd /
