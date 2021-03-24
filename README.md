@@ -5,8 +5,10 @@ YOLOv5 Object Detection in Noisy Images
 * brief instruction using Google Colaborator
   * so we can use free provided GPU (Runtime - Change runtime type - GPU) 
 * make a new folder and name it as 'dataset' and upload your dataset
-* change directory to content by typing %cd /content/
-* clone YOLOv5 by !git clone https://github.com/ultralytics/yolov5.git
+* change directory to content
+  * typing %cd /content/
+* clone YOLOv5
+  * !git clone https://github.com/ultralytics/yolov5.git
 * install requirements
   * %cd /content/yolov5/
   * !pip install -r requirements.txt
