@@ -6,7 +6,7 @@ YOLOv5 Object Detection in Noisy Images
   * so we can use free provided GPU (Runtime - Change runtime type - GPU) 
 * make a new folder and name it as 'dataset' and upload your dataset
 * change directory to content
-  * typing %cd /content/
+  * %cd /content/
 * clone YOLOv5
   * !git clone https://github.com/ultralytics/yolov5.git
 * install requirements
