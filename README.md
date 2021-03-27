@@ -1,14 +1,17 @@
 # yolov5-noise
-YOLOv5 Object Detection in Noisy Images
+YOLOv5 Object Detection for Pine Cone Images
 * original video link: https://www.youtube.com/watch?v=T0DO1C8uYP8 (in Korean)
-* Brief instruction using Google Colaborator
+* brief instruction using Google Colaborator
   * so we can use free provided GPU (Runtime - Change runtime type - GPU) 
-* make a new folder and name it as dataset and upload dataset
-* change directory to content by typing %cd /content/
-* clone YOLOv5 by !git clone https://github.com/ultralytics/yolov5.git
+* change directory to content
+  * %cd /content/
+* clone YOLOv5
+  * !git clone https://github.com/ultralytics/yolov5.git
 * install requirements
   * %cd /content/yolov5/
   * !pip install -r requirements.txt
+* you can download weights 'best.pt' and 'last.pt', and jump to the detect section to use them from here
+* make a new folder and name it as 'dataset' and upload your dataset
 * split dataset into train and validation (only if dataset isn't splitted into two)
   * %cd /
   * from glob import glob
@@ -20,14 +23,18 @@ YOLOv5 Object Detection in Noisy Images
     * f.write('\n'.join(train) + 'n')
   * with open('/content/dataset/val.txt', 'w') as f:
     * f.write('\n'.join(val) + 'n')
-* change data.yaml to indicate above train and val locations
-  *  import yaml
-  *  with open('/content/dataset/data.yaml', 'r') as f:
-     * data = yaml.load(f)
+* change data.yaml to indicate above train and val locations (can simply open the file and edit also)
+  * import yaml
+  * with open('/content/dataset/data.yaml', 'r') as f:
+    * data = yaml.load(f)
   * data['train'] = '/content/dataset/train.txt' (or a train directory)
   * data['val'] = '/content/dataset/val.txt' (or a val directory)
   * with open('/content/dataset/data.yaml', 'w') as f:
     * yaml.dump(data, f)
+  * modify nc as 1 since we only want to detect pincones
 * training
   * %cd /content/yolov5/
-  * !python train.py --img 416 --batch 16 --epochs 50 --data /content/dataset/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name fruit_yolov5s_results
+  * !python train.py --img 640 --batch 16 --epochs 50 --data /content/dataset/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name pinecones_yolov5s_results
+* detecting
+  * %cd /content/yolov5/
+  * !python detect.py --weights /content/yolov5/runs/train/pinecones_yolov5s_results/weights/best.pt --img 640 --conf 0.5 --source (location of videos or photos)
