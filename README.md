@@ -11,8 +11,12 @@ YOLOv5 Object Detection for Pine Cone Images
   * %cd /content/yolov5/
   * !pip install -r requirements.txt
 * you can download weights 'best.pt' and 'last.pt', and jump to the detect section to use them from here
+  * trained with more images and added 'best_ext.pt' and 'last_ext.pt'  
 * make a new folder and name it as 'dataset' and upload your dataset
-* split dataset into train and validation (only if dataset isn't splitted into two)
+  * uploaded files will be deleted after this session
+  * you can upload your dataset to Google Drive, so you don't need to upload everytime
+* split dataset into train and validation 
+  * only if the dataset hasn't been splitted. otherwise just set train and valid folders in data.yaml file
   * %cd /
   * from glob import glob
   * img_list = glob('/content/dataset/(location of images)/*.jpg')
