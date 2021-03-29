@@ -1,5 +1,5 @@
 names:
-- Pc
+- PC
 nc: 1
-train: /content/dataset/train/images
-val: /content/dataset/valid/images
+train: /content/drive/MyDrive/pinecones/train.txt
+val: /content/drive/MyDrive/pinecones/val.txt
