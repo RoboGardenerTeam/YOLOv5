@@ -1,4 +1,4 @@
-# yolov5-noise
+# yolov5
 YOLOv5 Object Detection for Pine Cone Images
 * original video link: https://www.youtube.com/watch?v=T0DO1C8uYP8 (in Korean)
 * brief instruction using Google Colaborator
